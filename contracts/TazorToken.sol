@@ -13,7 +13,7 @@ contract Tazor is BEP20('TEST Tazor v1', 'TAZOR') {
         _burn(_from, _amount);
         _moveDelegates(_delegates[_from], address(0), _amount);
     }
-
+                                                  
     // Copied and modified from YAM code:
     // https://github.com/yam-finance/yam-protocol/blob/master/contracts/token/YAMGovernanceStorage.sol
     // https://github.com/yam-finance/yam-protocol/blob/master/contracts/token/YAMGovernance.sol
